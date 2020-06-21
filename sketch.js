@@ -11,7 +11,7 @@ let restartButton;
 let runButton;
 let pic;
 function preload() {
-    pic = loadImage('simple-background-10181840.jpg');
+    pic = loadImage('https://thumbs.dreamstime.com/b/simple-background-10181840.jpg');
 }
 function drawArrow(base, vec, myColor, size) {
     push();
