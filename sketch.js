@@ -9,7 +9,10 @@ let heightControl = [];
 let speedControl = [];
 let restartButton;
 let runButton;
-
+let pic;
+function preload() {
+    pic = loadImage('https://thumbs.dreamstime.com/b/simple-background-10181840.jpg');
+}    
 function drawArrow(base, vec, myColor, size) {
     push();
     stroke(myColor);
@@ -57,7 +60,7 @@ function setup() {
     state = 'setBox';
 }
 function draw() {
-    background(0, 0, 255, 100);      
+    image(pic, 0, 0, 600, 600);   
     drawGround();
     restartButton.show();
     runButton.show();
